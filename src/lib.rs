@@ -28,7 +28,7 @@
 extern crate bytes;
 #[cfg(feature = "tokio-runtime")]
 extern crate ct_logs;
-extern crate futures;
+extern crate futures_util;
 extern crate hyper;
 extern crate rustls;
 extern crate tokio_io;

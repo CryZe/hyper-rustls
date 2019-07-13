@@ -11,11 +11,11 @@ repository = "https://github.com/ctz/hyper-rustls"
 [dependencies]
 bytes = "0.4"
 ct-logs = { version = "0.5", optional = true }
-futures = "0.1.21"
-hyper = { version = "0.12.14", default-features = false }
+futures-util-preview = "0.3.0-alpha.17"
+hyper = { git = "https://github.com/hyperium/hyper", default-features = false }
 rustls = "0.15"
-tokio-io = "0.1.1"
-tokio-rustls = "0.9"
+tokio-io = { git = "https://github.com/tokio-rs/tokio" }
+tokio-rustls = { git = "https://github.com/quininer/tokio-rustls", branch = "tokio-0.2" }
 webpki = "0.19.0"
 webpki-roots = { version = "0.16", optional = true }
 
